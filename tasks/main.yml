@@ -1,0 +1,15 @@
+- name: ensure ioncube 4.5.3
+  copy: src=files/ioncube_loader_lin_5.3.so dest=/usr/lib/php5/20090626/
+  sudo: yes
+
+- name: ensure ioncube conf.
+  copy: src=20-ioncube.ini dest=/etc/php5/apache2/conf.d/
+  sudo: yes
+
+- name: ensure phpinfo()
+  copy: src=phpinfo.php dest=/var/www/phpi.php
+  sudo: yes
+
+- name: ensure apache2 restarted
+  service: name=apache2 state=restarted
+  sudo: yes

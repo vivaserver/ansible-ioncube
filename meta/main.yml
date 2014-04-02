@@ -1,0 +1,14 @@
+---
+galaxy_info:
+  author: "Cristian R. Arroyo"
+  description: Installs ionCube Loader 4.5.3 on a stock LAMP stack
+  license: MIT
+  min_ansible_version: 1.4
+  platforms:
+    - name: Ubuntu
+      versions:
+        - precise
+  categories:
+    - web
+dependencies:
+  - vivaserver.ansible-lamp
