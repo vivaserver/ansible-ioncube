@@ -27,12 +27,10 @@ Including an example of how to use your role (for instance, with variables passe
       roles:
          - { role: username.rolename, x: 42 }
 
-License
--------
+## License
 
 MIT
 
-Author Information
-------------------
+## Copyright
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+(c)2014 Cristian R. Arroyo
