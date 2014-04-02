@@ -1,5 +1,5 @@
 - name: ensure ioncube 4.5.3
-  copy: src=files/ioncube_loader_lin_5.3.so dest=/usr/lib/php5/20090626/
+  copy: src=ioncube_loader_lin_5.3.so dest=/usr/lib/php5/20090626/
   sudo: yes
 
 - name: ensure ioncube conf.
