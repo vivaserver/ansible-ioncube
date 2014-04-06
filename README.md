@@ -1,31 +1,24 @@
-Role Name
-========
+# Ansible role for installing ionCube Loader on a LAMP stack
 
-A brief description of the role goes here.
+This Ansible Galaxy role installs the [ionCube Loader][ion] on a LAMP stack. This loader is required to run some encoded PHP applications such as [WHMCS][whmcs].
 
-Requirements
-------------
+Since the ionCube Loader version depends on the specific PHP version installed, this role has as a dependency the [vivaserver.lamp][lamp] role.
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+## Requirements
 
-Role Variables
---------------
+Ubuntu 12.04, including [elementaryOS][eos] 0.2 "Luna".
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+## Dependencies
 
-Dependencies
-------------
+Ansible Galaxy [vivaserver.lamp][lamp] role.
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
-
-Example Playbook
--------------------------
+## Example Playbook
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
     - hosts: servers
       roles:
-         - { role: username.rolename, x: 42 }
+         - vivaserver.ioncube
 
 ## License
 
@@ -34,3 +27,8 @@ MIT
 ## Copyright
 
 (c)2014 Cristian R. Arroyo
+
+[ion]: http://www.ioncube.com/loaders.php
+[lamp]: https://github.com/vivaserver/ansible-lamp
+[whmcs]: http://www.whmcs.com/ 
+[eos]: http://elementaryos.org
