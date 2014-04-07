@@ -4,7 +4,7 @@
 
 This Ansible Galaxy role installs the [ionCube Loader][ion] on a LAMP stack. This loader is required to run some encoded PHP applications such as [WHMCS][whmcs].
 
-Since the ionCube Loader version depends on the specific PHP version installed, this role has as a dependency the [vivaserver.lamp][lamp] role.
+Since the loader version depends on the specific PHP version installed, this role has as a dependency the [vivaserver.lamp][lamp] role for installing ionCube 4.5.3 on the PHP 5.3 package of Ubuntu 12.04. Other PHP versions might require a different loader version, so they're not supported by this role.
 
 ## Requirements
 
